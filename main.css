@@ -1,0 +1,67 @@
+/* -------- Borderbox Fix -------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* -------- General Settings -------- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display:block
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* -------- Navigation Settings -------- */
+
+.nav-label {
+    z-index: 100;
+    color: #000;
+    display: block;
+    background-image: url(images/menu.svg);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 3.5rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1.5rem 1.5rem;
+}
+
+.logo svg {
+    fill: #aaa;
+}
