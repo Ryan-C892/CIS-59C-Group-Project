@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 /* -------- Borderbox Fix -------- */
 html {
     box-sizing: border-box;
@@ -35,8 +36,13 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background-color: #CDFCFF;
+}
+
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul, li {
@@ -47,21 +53,117 @@ ul, li {
 
 /* -------- Navigation Settings -------- */
 
-.nav-label {
-    z-index: 100;
-    color: #000;
-    display: block;
-    background-image: url(images/menu.svg);
-    position: absolute;
-    top: -5px;
-    left: 0;
-    height: 3.5rem;
-    width: 3rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 1.5rem 1.5rem;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.logo svg {
-    fill: #aaa;
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding-right: 30px;
+}
+
+.nav-menu li a {
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: #1B365C;
+}
+
+.logo img {
+    width: 7rem;
+    height: 7rem;
+}
+
+/* -------- Main Settings -------- */
+main {
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url("images/quino-al-vmZ2DehWQ3Q-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.header-column1 {
+    width: calc(40% - (( 4% ) * 0.6));
+    margin: 0 auto 20px auto;
+    padding: 60px 20px 15px 25px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.header-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 300px;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+}
+
+.header-para {
+    font-size: 1.1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header-para:nth-child(2) {
+    margin-top: 10px;
+}
+
+.header-para:nth-child(4) {
+    margin-top: 50px;
+}
+
+.button-row {
+    padding-top: 10px;
+}
+
+.button-row button {
+    padding: 10px;
+}
+
+.button-row button:hover {
+    background-color: #CDFCFF;
+}
+
+.button-row a {
+    color: #1B365C;
+}
+
+.button-row button:nth-child(2) {
+    margin-left: 10px;
+}
+/* -------- Media Queries -------- */
+@media (max-width: 1024px) {
+    .nav-label {
+        z-index: 100;
+        color: #000;
+        display: block;
+        background-image: url(images/menu.svg);
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 3.5rem;
+        width: 3rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 1.5rem 1.5rem;
+    }
 }
