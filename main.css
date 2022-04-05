@@ -176,7 +176,7 @@ main {
 }
 .newsletter-container {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
     color: #fff;
@@ -202,6 +202,7 @@ main {
 .form-container input[type="submit"] {
     cursor: pointer;
     color: #1B365C;
+    background-color: #fff;
 }
 .form-container input[type="submit"]:hover {
     background-color: #CDFCFF;
