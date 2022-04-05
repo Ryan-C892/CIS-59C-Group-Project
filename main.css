@@ -150,6 +150,62 @@ main {
 .button-row button:nth-child(2) {
     margin-left: 10px;
 }
+
+/* -------- Newsletter Settings -------- */
+
+.newsletter {
+    position: relative;
+    height: 200px; 
+    width: 100%;
+    margin-top: 20px;
+    border-top: 10px solid #AAB8C2;
+    border-bottom: 10px solid #AAB8C2;
+}
+.newsletter::before {
+    content: "";
+    background-image: url("images/quino-al-vmZ2DehWQ3Q-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+.newsletter-container {
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+}
+.newsletter-container h2 {
+    font-size: 2rem;
+}
+.form-container {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container input {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #AAB8C2;
+}
+.form-container input[type="submit"] {
+    cursor: pointer;
+    color: #1B365C;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #CDFCFF;
+}
 /* -------- Media Queries -------- */
 @media (max-width: 1024px) {
     .nav-label {
