@@ -55,7 +55,7 @@ ul, li {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
@@ -75,13 +75,14 @@ nav {
 .nav-menu li a {
     font-size: 1.2rem;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     color: #1B365C;
 }
 
 .logo img {
     width: 7rem;
     height: 7rem;
+    margin-right: 40px;
 }
 
 /* -------- Main Settings -------- */
