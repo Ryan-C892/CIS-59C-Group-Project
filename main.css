@@ -85,6 +85,10 @@ nav {
     margin-right: 40px;
 }
 
+.navBtn {
+    display: none;
+}
+
 /* -------- Main Settings -------- */
 main {
     margin: 0 auto;
@@ -287,20 +291,55 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+
 /* -------- Media Queries -------- */
-@media (max-width: 1024px) {
-    .nav-label {
+@media screen and (max-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 4rem;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .logo img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 4rem;
+        width: 4rem;
+    }
+    .navBtn {
         z-index: 100;
         color: #000;
         display: block;
         background-image: url(images/menu.svg);
         position: absolute;
-        top: -5px;
+        top: 0px;
         left: 0;
-        height: 3.5rem;
+        height: 3.3rem;
         width: 3rem;
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: 1.5rem 1.5rem;
+        background-color: transparent
+    }
+    .showNav {
+        margin-top: 256px;
+        padding: 0% 0% 0% 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: #CDFCFF;
+    }
+
+    .nav-menu li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
     }
 }
