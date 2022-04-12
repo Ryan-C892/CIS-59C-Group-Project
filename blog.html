@@ -5,25 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo-wrapper">
-            <a href="index.html" class="logo">
-                <img src="./images/dd2cd3a1107f479fa5c8f3117026e178_3.png" alt="Logo">
-            </a>
-        </div>
-        <label for="nav-menu" class="nav-label"></label>
-        <ul class="nav-menu">
+    <nav class="navbar" id="nav">
+        <a href="index.html" class="logo">
+            <img src="./images/dd2cd3a1107f479fa5c8f3117026e178_3.png" alt="Logo">
+        </a>
+        <button for="nav-menu" class="navBtn" id="navBtn"></button>
+        <ul class="nav-menu" id="navMenu">
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="travel.html">Travel Resources</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <main>
-        
+        <div class="content-container">
+            <div class="content none">Box 0</div>
+            <div class="content none">Box 1</div>
+            <div class="content none">Box 2</div>
+            <div class="content none">Box 3</div>
+            <div class="content none">Box 4</div>
+            <div class="content none">Box 5</div>
+            <div class="content none">Box 6</div>
+            <div class="content none">Box 7</div>
+            <div class="content none">Box 8</div>
+            <div class="content none">Box 9</div>
+        </div>
+        <button id="loadMore">More</button>
     </main>
     <footer>
         <section class="footer-link">
