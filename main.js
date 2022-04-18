@@ -14,7 +14,7 @@ function EventHandler() {
         element.classList.remove("none");
     });
     loadMore.addEventListener('click', ()=> {
-        var moreContent = Array.from(content).slice(5, 10);
+        var moreContent = Array.from(content).slice(4, 10);
         moreContent.forEach(element => {
             element.classList.toggle("none");
         });
