@@ -316,9 +316,35 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+/* -------- About Settings -------- */
+.about-img {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 20px auto;
+    background-image: url("images/andrew-deslauriers-oUPywYZT88Y-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+}
+
+.about-para {
+    color: #222222;
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-para p {
+    margin-bottom: 20px;
+}
 
 /* -------- Blog Settings -------- */
-.blog-title {
+.title {
     font-size: 2rem;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
