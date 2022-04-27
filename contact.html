@@ -20,9 +20,26 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+
     <main>
-        
+        <h2 class="title">Contact Me</h2>
+        <section class="contact-container">
+            <form id="contact-form" action="message.html" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter Subject">
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </main>
     <footer>
         <section class="footer-link">
