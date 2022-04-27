@@ -186,7 +186,7 @@ main {
 
 .newsletter::before {
     content: "";
-    background-image: url("images/quino-al-vmZ2DehWQ3Q-unsplash.jpg");
+    background-image: url("images/simon-berger-twukN12EN7c-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -210,6 +210,11 @@ main {
 
 .newsletter-container h2 {
     font-size: 1.7rem;
+    text-shadow: 0.5px 0.5px #888888;
+}
+
+.newsletter-container p {
+    text-shadow: 0.5px 0.5px #888888;
 }
 
 .form-container {
@@ -217,7 +222,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    padding: 15px;
+    width: 690px;
+    margin: 0 auto 50px auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .form-container input {
@@ -436,7 +444,8 @@ footer a {
 
 
 /* -------- Media Queries -------- */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1099px) {
+    /* -------- Header Settings -------- */
     nav {
         display: flex;
         justify-content: flex-start;
@@ -522,6 +531,7 @@ footer a {
         font-family: 'DM Sans', sans-serif;
         text-align: center;
     }
+    
     .button-row {
         width: calc(100% - ((30%) * 0.4));
         display: flex;
@@ -538,5 +548,61 @@ footer a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    /* -------- Newsletter Settings -------- */
+    .newsletter {
+        position: relative;
+        height: 100%;
+        max-height: 100%; 
+        width: 100%;
+        margin: 20px auto;
+        border-top: 10px solid #AAB8C2;
+        border-bottom: 10px solid #AAB8C2;
+    }
+}
+@media screen and (max-width: 700px) {
+    /* -------- Newsletter Settings -------- */
+    .newsletter-container h2 {
+        font-size: 1.7rem;
+        width: 100%;
+        max-width: 240px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .newsletter-container p {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 240px;
+        text-align: center;
+    }
+    
+    .form-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 50px auto;
+        padding: 15px;
+        width: 280px;
+        max-width: 100%;
+    }
+    
+    .form-container input {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 1px solid #AAB8C2;
+        border: none;
+    }
+    
+    .form-container input[type="submit"] {
+        cursor: pointer;
+        color: #1B365C;
+        background-color: #fff;
+        border: none;
+        width: 242px;
     }
 }
