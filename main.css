@@ -599,6 +599,9 @@ footer a {
         align-items: center;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> RobertKoepp-master
     /* -------- Newsletter Settings -------- */
     .newsletter {
         position: relative;
@@ -717,8 +720,12 @@ footer a {
         display: none;
     }
 }
+<<<<<<< HEAD
 =======
 }
+=======
+
+>>>>>>> RobertKoepp-master
 
 /* Contact Page */
 .contact-title {
@@ -790,4 +797,7 @@ fieldset {
     font-family: 'DM Sans', sans-serif;
   }
   
+<<<<<<< HEAD
 >>>>>>> 3e10a20afa3b95fc64b4882bf35fc0ee912b1317
+=======
+>>>>>>> RobertKoepp-master
