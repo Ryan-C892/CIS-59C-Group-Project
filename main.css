@@ -598,6 +598,7 @@ footer a {
         justify-content: center;
         align-items: center;
     }
+<<<<<<< HEAD
     /* -------- Newsletter Settings -------- */
     .newsletter {
         position: relative;
@@ -716,3 +717,77 @@ footer a {
         display: none;
     }
 }
+=======
+}
+
+/* Contact Page */
+.contact-title {
+    font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: #1B365C;
+    margin: 50px 0 50px 0;
+}
+
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  
+  legend {
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  label {
+    float: left;
+    width: 12em;
+    text-align: right;
+  }
+  label,
+  input,
+  select {
+    font-size: 90%;
+  }
+  input,
+  select {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  input:required,
+  input[required] {
+    border: 2px solid #1B365C;
+  }
+  input:valid {
+    border: 1px solid black;
+  }
+  input:invalid {
+    box-shadow: none;
+    border: 2px solid #1B365C;
+  }
+  br {
+    clear: both;
+  }
+  #buttons input {
+    width: 10em;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 30px 10px 30px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+>>>>>>> 3e10a20afa3b95fc64b4882bf35fc0ee912b1317
