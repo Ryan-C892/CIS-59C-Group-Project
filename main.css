@@ -442,7 +442,7 @@ footer a {
     display: none;
 }
 
-/* -------- Contact Settings -------- */
+/* -------- Contact Settings 
 .contact-container {
     color: #fff;
     position: relative;
@@ -491,7 +491,7 @@ footer a {
     border-radius: 4px;
     margin: 6px 0 16px 0;
     
-}
+}-------- */
 /* -------- Media Queries -------- */
 @media screen and (max-width: 1099px) {
     /* -------- Header Settings -------- */
