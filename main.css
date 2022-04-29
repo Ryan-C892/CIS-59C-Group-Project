@@ -248,6 +248,22 @@ main {
     background-color: #f175ff;
 }
 
+.success {
+    color: green;
+}
+
+.error {
+    position: relative;
+    color: red;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    text-shadow: 0.5px 0.5px #888888;
+}
+
 /* -------- Latest Posts -------- */
 .latest {
     display: flex;
