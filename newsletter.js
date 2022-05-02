@@ -1,8 +1,6 @@
 // Newsletter Form //
 const newsForm = document.getElementById("newsletter_form");
 const form_container = document.getElementById("form_container");
-const firstInput = document.getElementById("name");
-const secondInput = document.getElementById("email");
 
 function showMessage(input, message, type) {
     const msg = document.createElement('div');
