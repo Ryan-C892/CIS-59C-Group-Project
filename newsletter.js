@@ -2,12 +2,15 @@
 const newsForm = document.getElementById("newsletter_form");
 const form_container = document.getElementById("form_container");
 
+
 function showMessage(input, message, type) {
     const msg = document.createElement('div');
     msg.innerHTML = message;
     newsForm.insertBefore(msg, form_container);
     input.className = type ? "success" : "error";
     msg.className = type ? "success" : "error";
+    // Vanish
+    setTimeout(() => document.querySelector('div.error').remove(), 5000);
     return type;
 }
 
