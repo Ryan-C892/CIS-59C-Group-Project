@@ -256,12 +256,20 @@ main {
     position: relative;
     color: red;
     font-family: 'DM Sans', sans-serif;
-    text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
     padding: 0 20px 0 20px;
-    text-shadow: 0.5px 0.5px #888888;
+}
+
+div.error {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 0 auto;
 }
 
 /* -------- Latest Posts -------- */
@@ -576,6 +584,16 @@ br {
     margin: 6px 0 16px 0;
     
 }-------- */
+/* -------- Subscribed Settings ---------- */
+.congrats p {
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 540px;
+}
 /* -------- Media Queries -------- */
 @media screen and (max-width: 1099px) {
     /* -------- Header Settings -------- */
