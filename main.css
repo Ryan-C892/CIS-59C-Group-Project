@@ -268,7 +268,8 @@ div.error {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 100%;
+    max-width: 290px;
     margin: 0 auto;
 }
 
@@ -493,15 +494,16 @@ label {
     float: left;
     width: 12em;
     text-align: right;
+    margin-right: 1em;
 }
 label,
 input,
 select {
     font-size: 90%;
 }
-input,
-select {
-    width: 15em;
+.contact-section input,
+.contact-section select {
+    width: 19em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -589,10 +591,8 @@ br {
     font-size: 1.2rem;
     font-family: 'DM Sans', sans-serif;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    width: 540px;
 }
 /* -------- Media Queries -------- */
 @media screen and (max-width: 1099px) {
