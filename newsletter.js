@@ -42,7 +42,7 @@ function validateEmail(input, required, invalid) {
     return true;
 }
 
-newsForm.addEventListener("submit", (e)=> {
+newsForm.addEventListener("submit", (event)=> {
     event.preventDefault();
 
     let nameValid = checkValue(newsForm.elements["name"], "Please enter your name");
