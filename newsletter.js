@@ -2,7 +2,6 @@
 const newsForm = document.getElementById("newsletter_form");
 const form_container = document.getElementById("form_container");
 
-
 function showMessage(input, message, type) {
     const msg = document.createElement('div');
     msg.innerHTML = message;
