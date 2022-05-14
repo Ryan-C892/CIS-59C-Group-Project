@@ -468,6 +468,7 @@ footer a {
 
 /* Contact Page */
 .contact-title {
+    position: relative;
     font-size: 2rem;
     font-family: 'DM Sans', sans-serif;
     text-align: center;
@@ -484,64 +485,61 @@ fieldset {
 }
   
 legend {
-    color: black;
+    color: #fff;
     font-weight: bold;
     font-size: 120%;
-    margin-bottom: 0.5em;
+    margin: 0 auto 0.5em auto;
     text-align: center;
 }
-label {
-    float: left;
+
+#contact-form label {
+    display: flex;
+    justify-content: flex-start;
     width: 12em;
     text-align: right;
-    margin-right: 1em;
+    margin-left: 1em;
 }
-label,
-input,
-select {
+
+#contact-form label,
+#contact-form input,
+#contact-form select {
     font-size: 90%;
 }
-.contact-section input,
-.contact-section select {
+
+#contact-form input,
+#contact-form select {
     width: 19em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }
-input:required,
-input[required] {
+
+#contact-form input:required,
+#contact-form input[required] {
     border: 2px solid #1B365C;
 }
-input:valid {
+
+#contact-form input:valid {
     border: 1px solid black;
 }
-input:invalid {
+
+#contact-form input:invalid {
     box-shadow: none;
     border: 2px solid #1B365C;
 }
-br {
+
+#contact-form br {
     clear: both;
 }
+
 #buttons input {
     width: 10em;
 }
 
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 30px 10px 30px;
-    font-family: 'DM Sans', sans-serif;
-}
-/* -------- Contact Settings 
 .contact-container {
     color: #fff;
     position: relative;
     height: 100%;
-    max-height: 690px; 
+    max-height: 100%; 
     width: 100%;
     margin: 20px auto;
     font-size: 1.1rem;
@@ -574,7 +572,7 @@ br {
     padding: 15px;
     width: 100%;
     max-width: 690px;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 20px auto;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -583,9 +581,12 @@ br {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 6px 0 16px 0;
-    
-}-------- */
+    margin: 6px 0 16px 0;   
+}
+
+#contact-form a {
+    color: #3399e6;
+}
 /* -------- Subscribed Settings ---------- */
 .congrats p {
     font-size: 1.2rem;
