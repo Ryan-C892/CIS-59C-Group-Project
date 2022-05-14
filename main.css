@@ -535,6 +535,14 @@ legend {
     width: 10em;
 }
 
+#contact-form span:first-of-type {
+    float: left;
+}
+
+#contact-form span:last-of-type {
+    float: right;
+}
+
 .contact-container {
     color: #fff;
     position: relative;
