@@ -1,9 +1,9 @@
 "use strict";
 var $ = function(id) { return document.getElementById(id); };
 // Global Selectors //
-var registerForm = $('registration_form');
+var registerForm = $('contact-form');
 var fieldSet = document.querySelector('fieldset');
-
+var resetBtn = $('reset');
 // Show Message //
 function showWarning(input, message, type) {
     const msg = document.createElement('div');
@@ -54,4 +54,8 @@ registerForm.addEventListener("submit", (event)=> {
     if (validFirstName && validLastName && validEmail) {
         window.location = "register_account.html";
     }
+});
+// Listen for Reset //
+resetBtn.addEventListener("click", ()=> {
+    registerForm.reset();
 });
