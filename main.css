@@ -595,6 +595,15 @@ legend {
 #contact-form a {
     color: #3399e6;
 }
+
+#submit, 
+#reset, 
+select,
+input[type="radio"], 
+input[type="checkbox"], 
+input[type="range"] {
+    cursor: pointer;
+}
 /* -------- Subscribed Settings ---------- */
 .congrats p {
     font-size: 1.2rem;
